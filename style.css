@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,6 +7,10 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -16,54 +20,115 @@ body {
   );
 }
 
-.login-card-container {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+.login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.login-card-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.login-card-logo img {
+  width: 300px;
 }
 
 .login-card-navbar {
-    display: flex;
-    float: right;
-    font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  margin: 20px;
+  margin-top: 25px;
+  padding-right: 15px;
+}
+
+.login-card-navbar a {
+  padding: 6px;
+  text-decoration: none;
+  color: #090909;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  
+}
+
+.login-card-navbar a:hover {
+  color: #cfcecf;
+  text-shadow: 5px 2px 5px rgba(9, 9, 9, 0.3);
+  transition: text-shadow 0.3s ease;
+}
+
+.login-card-navbar a.active {
+    color: #cfcecf;
 }
 
 .login-card-header h1 {
-    display: flex;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 38px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  margin-bottom: 10px;
 }
 
 .login-card-header p {
-    display: flex;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .login-card-form {
-    position: relative;
+  position: relative;
 }
 
 .login-card-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.first-form, .second-form {
-    display: flex;
-    margin: 3px;
-    padding-top: 5px;
+.first-form,
+.second-form {
+  display: flex;
+  margin: 3px;
+  padding-top: 5px;
 }
 
 .material-symbols-outlined {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.first-form input, .second-form input {
-    border-radius: 15px;
-    padding: 4px;
-    text-indent: 5px;
+.first-form input,
+.second-form input {
+  border-radius: 15px;
+  padding: 4px;
+  text-indent: 5px;
+  
+}
+
+.login-card-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.login-card-socials svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #090909;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-card-socials svg:hover {
+  color: #cfcecf;
 }
