@@ -70,7 +70,7 @@ body {
   justify-content: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 38px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -95,6 +95,7 @@ body {
   display: flex;
   margin: 3px;
   padding-top: 5px;
+  margin-right: 25px;
 }
 
 .material-symbols-outlined {
@@ -106,14 +107,15 @@ body {
   border-radius: 15px;
   padding: 4px;
   text-indent: 5px;
-  
+  width: 180px;
+  border: 2px solid #090909;
 }
 
 .login-card-socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 300px;
 }
 
 .login-card-socials svg {
@@ -130,5 +132,66 @@ body {
 }
 
 .login-card-socials svg:hover {
+  color: #cfcecf;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox  {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+.checkbox label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.newAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.newAccount button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #090909;
+  font-size: 20px;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  background: #cfcecf;
+  border: 2px solid #090909;
+}
+
+.newAccount button:hover {
+  background-color: rgba(77, 138, 195, 0.8); 
+   
+}
+
+.newAccount button:active {
+  transform: translateY(2px); /* Утапливаем кнопку */
+  box-shadow: none; /* Убираем тень при нажатии */
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #090909;
+}
+
+.forgot-password:hover {
   color: #cfcecf;
 }
