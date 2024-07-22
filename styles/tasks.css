@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(106, 103, 155, 0.942) 0%,
+    rgba(164, 135, 200, 1) 35%,
+    rgba(0, 159, 255, 1) 100%
+  );
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.options .backHome  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #090909;
+}
+
+.backHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Устанавливает позиционирование относительно родительского элемента */
+  left: 100px;
+  text-decoration: none;
+  width: 120px;
+  border-radius: 30px;
+}
+
+.backHome .material-symbols-outlined {
+  font-size: 30px;
+  color: #090909;
+}
+
+.btn-back {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* .changes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+} */
+
+.firstbtn,
+.secondbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: none;
+  color: #090909;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.moves {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: 40px;
+  justify-content: end;
+}
+
+.moves .material-symbols-outlined {
+  font-size: 40px;
+  color: #090909;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+  height: 80vh;
+  margin-top: 80px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  margin-left: 20px;
+  border: 2px solid #cfcecf;
+  border-radius: 40px;
+  align-items: center;
+  padding: 20px;
+}
+
+.column h2 {
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.column .material-symbols-outlined {
+  color: #090909;
+  font-size: 30px;
+}
+
+.column .material-symbols-outlined:hover {
+  color: #cfcecf;
+}
