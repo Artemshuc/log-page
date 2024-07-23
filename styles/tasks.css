@@ -126,3 +126,58 @@ body {
 .column .material-symbols-outlined:hover {
   color: #cfcecf;
 }
+
+
+.add-task-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 20px;
+  background: #cfcecf;
+  border: 2px solid #090909;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.add-task-button:hover {
+  background-color: rgba(77, 138, 195, 0.8); 
+   
+}
+
+.container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.place {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 10px #090909;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  word-break: break-all;
+  background: #edbebe;
+  width: 220px;
+  height: 50px;
+}
+
+.place::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+}
+

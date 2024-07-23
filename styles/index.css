@@ -34,6 +34,12 @@ body {
 
 .login-card-logo img {
   width: 300px;
+  transition: transform 0.5s ease;
+  
+}
+
+.login-card-logo img:hover {
+  transform: rotate(45deg)
 }
 
 .login-card-navbar {
@@ -115,7 +121,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .login-card-socials svg {
@@ -125,7 +131,6 @@ body {
   width: 30px;
   height: 30px;
   margin: 0 10px;
-  border-radius: 50%;
   text-decoration: none;
   color: #090909;
   transition: background-color 0.3s, color 0.3s;
