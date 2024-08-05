@@ -33,13 +33,7 @@ body {
 }
 
 .login-card-logo img {
-  width: 300px;
-  transition: transform 0.5s ease;
-  
-}
-
-.login-card-logo img:hover {
-  transform: rotate(45deg)
+  width: 300px;  
 }
 
 .login-card-navbar {
